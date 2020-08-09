@@ -1,0 +1,51 @@
+$def with(result)
+<!-- dejamos solo lo que estara dentro del body -->
+<h1>DELETE STUDENTS</h1>
+<br>
+<form method="POST" action="">
+    <input type="hidden" id="id_alumno" name="id_alumno" value ="$result['id_alumno']">
+    <div class="form-group">
+        <label for="matricula">Matricula</label>
+        <input type="text" readonly class="form-control" name="matricula" value="$result['matricula']" required>
+    </div>
+    <div class="form-group">
+        <label for="name">Nombre</label>
+        <input type="text" readonly class="form-control" name="name" value="$result['nombre']" required>
+    </div>
+    <div class="form-group">
+        <label for="onelastname">Apellido Paterno</label>
+        <input type="text" readonly class="form-control" name="onelastname" value="$result['onelastname']" required>
+    </div>
+    <div class="form-group">
+        <label for="twolastname">Apellido Materno</label>
+        <input type="text" readonly class="form-control" name="twolastname" value="$result['twolastname']" required>
+    </div>
+    <div class="form-group">
+        <label for="edad">Edad</label>
+        <input type="text" readonly class="form-control" name="edad" value="$result['edad']" required>
+    </div>
+    <div class="form-group">
+        <label for="borndate">Fecha de Nacimiento</label>
+        <input type="date" readonly class="form-control" name="borndate" value="$result['borndate']" required>
+    </div>
+    <div class="form-group">
+        <label for="sex">Sexo</label>
+        <select name="sex" disabled class="form-control" required>
+            <option selected>$result['sex']</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="state">Estado</label>
+        <select name="state" disabled class="form-control" required>
+            <option selected>$result['estado']</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-12 text-center">
+            <button class="btn btn-danger" type="submit">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z"/>
+            </svg> Delete</button>
+        </div>
+    </div>
+</form>
