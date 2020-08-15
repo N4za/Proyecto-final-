@@ -1,0 +1,8 @@
+cheroot==8.4.2
+dnspython==2.0.0
+jaraco.functools==3.0.1
+more-itertools==8.4.0
+mysql-connector-python==8.0.21
+protobuf==3.12.4
+six==1.15.0
+web.py==0.61
